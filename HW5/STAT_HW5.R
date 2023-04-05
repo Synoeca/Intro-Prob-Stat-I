@@ -60,14 +60,14 @@ FindMedian <- function(vec) {
 }
 
 #--------------------------------------------------------------------------------#
-# Returns the median of the given vector
+# Returns the mode of the given vector
 #
 # vec: a given vector
 # modeList: a sorted given vector
 # count: store the count of most frequently occurring value
 # mode: stores the most frequently appearing value as mode
 # modeFinal: stores all values equal to the mode in case there are multiple modes
-# Returns the median of the vec
+# Returns the mode of the vec
 #--------------------------------------------------------------------------------#
 FindMode <- function(vec) {
   modeList <- list()
@@ -110,7 +110,7 @@ FindMode <- function(vec) {
 # Returns the minimum of the vec
 #----------------------------------------#
 FindMinimum <- function(vec) {
-  min <- 100
+  min <- 9999
   for (i in 1:length(vec)) {
     if (vec[i] < min) {
       min <- vec[i]
@@ -126,7 +126,7 @@ FindMinimum <- function(vec) {
 # Returns the maximum of the vec
 #----------------------------------------#
 FindMaximum <- function(vec) {
-  max <- 0
+  max <- -9999
   for (i in 1:length(vec)) {
     if (vec[i] > max) {
       max <- vec[i]
